@@ -1,0 +1,164 @@
+@use "_components";
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+  min-width: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+@mixin header-formant {
+  padding: 1rem 2rem;
+  align-items: center;
+}
+@mixin style-text {
+  padding: auto;
+  font-family: "Alfa Slab One";
+  text-shadow: 4px 4px components.$color-secondary;
+}
+.header{
+  min-height: 100vh;
+  background-image: url(../assets/img/Design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1rem;
+  .navegation{
+    // border: 1px solid black;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    .nav{
+      font-family: "Prompt";
+      @include header-formant();
+    }
+    .info{
+      @include header-formant();
+    }
+  }
+  .main-header{
+    // border: 1px solid black;
+    margin-top: 3rem;
+    padding: 2rem;
+    color: components.$color-primary;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    .title{
+      margin-top: 0.25rem;
+      @include style-text();
+    }
+    .subtitle{
+      @include style-text();
+    }
+    .text{
+      display: flex;;
+      justify-content: center;
+      .description{
+        padding: 0.5rem 1rem;
+        display: inline;
+        border: 3px solid components.$color-primary;
+        border-style: dashed solid;
+        font-family: "Prompt";
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.features{
+  padding: 2rem 0.5rem;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  .features-description{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .features-title{
+      display: inline-block;
+      padding: 0.3rem 0.5rem;
+      font-family: "Prompt";
+      font-size: 12pt;
+      color:components.$color-primary;
+      font-weight: 600;
+      text-align: center;
+      background-color: #ffc045;
+    }
+    .features-subtitle{
+      font-family: "Alfa Slab One";
+      text-transform: uppercase;
+      color: components.$color-primary;
+    }
+    .features-text{
+      width: 80%;
+      p{
+        font-family: "Montserrat";
+        color: components.$color-primary;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+// MEDIA QUERY
+
+@media (max-width: 464px){ 
+  .title{
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .subtitle{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .description{
+    text-align: center;
+    font-size: 8pt;
+  }
+  .info{
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media (min-width: 465px){ 
+  .title{
+    font-size: 5rem;
+    text-align: center;
+  }
+  .subtitle{
+    text-align: center;
+    font-size: 4rem;
+  }
+  .description{
+    text-align: center;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 961px){ 
+  .title{
+    text-align: left;
+    font-size: 7rem;
+  }
+  .subtitle{
+    text-align: left;
+    font-size: 5rem;
+  }
+  .text{
+    margin: 0;
+    display:block !important;
+    .description{
+      text-align: left;
+      font-size: 12pt;
+    }
+  }
+}

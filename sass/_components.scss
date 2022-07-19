@@ -1,0 +1,24 @@
+@use "sass:color" as scolor;
+
+
+$color-primary:#3d2514;
+$color-secondary:#fee8bc;
+.main-menu{
+  margin: 0;
+  li{
+    list-style: none;
+    font-size: 1rem;
+    display: inline;
+    margin-right: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    a{
+      color:$color-primary;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+        color: scolor.adjust($color-primary,$alpha:-0.7,$red:100);
+      }
+    }
+  }
+}

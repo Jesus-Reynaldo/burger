@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.main-menu {
+  margin: 0;
+}
+.main-menu li {
+  list-style: none;
+  font-size: 1rem;
+  display: inline;
+  margin-right: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-menu li a {
+  color: #3d2514;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+  color: rgba(161, 37, 20, 0.3);
+}
+
+html {
+  min-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: url(../assets/img/Design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1rem;
+}
+.header .navegation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header .navegation .nav {
+  font-family: "Prompt";
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.header .navegation .info {
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.header .main-header {
+  margin-top: 3rem;
+  padding: 2rem;
+  color: #3d2514;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.header .main-header .title {
+  margin-top: 0.25rem;
+  padding: auto;
+  font-family: "Alfa Slab One";
+  text-shadow: 4px 4px #fee8bc;
+}
+.header .main-header .subtitle {
+  padding: auto;
+  font-family: "Alfa Slab One";
+  text-shadow: 4px 4px #fee8bc;
+}
+.header .main-header .text {
+  display: flex;
+  justify-content: center;
+}
+.header .main-header .text .description {
+  padding: 0.5rem 1rem;
+  display: inline;
+  border: 3px solid #3d2514;
+  border-style: dashed solid;
+  font-family: "Prompt";
+  font-weight: bold;
+}
+
+.features {
+  padding: 2rem 0.5rem;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+.features .features-description {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.features .features-description .features-title {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  font-family: "Prompt";
+  font-size: 12pt;
+  color: #3d2514;
+  font-weight: 600;
+  text-align: center;
+  background-color: #ffc045;
+}
+.features .features-description .features-subtitle {
+  font-family: "Alfa Slab One";
+  text-transform: uppercase;
+  color: #3d2514;
+}
+.features .features-description .features-text {
+  width: 80%;
+}
+.features .features-description .features-text p {
+  font-family: "Montserrat";
+  color: #3d2514;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 464px) {
+  .title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .description {
+    text-align: center;
+    font-size: 8pt;
+  }
+  .info img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 465px) {
+  .title {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .description {
+    text-align: center;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 961px) {
+  .title {
+    text-align: left;
+    font-size: 7rem;
+  }
+  .subtitle {
+    text-align: left;
+    font-size: 5rem;
+  }
+  .text {
+    margin: 0;
+    display: block !important;
+  }
+  .text .description {
+    text-align: left;
+    font-size: 12pt;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
