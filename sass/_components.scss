@@ -3,6 +3,7 @@
 
 $color-primary:#3d2514;
 $color-secondary:#fee8bc;
+$color-btn:#bf2222;
 .main-menu{
   margin: 0;
   li{
@@ -19,6 +20,30 @@ $color-secondary:#fee8bc;
         text-decoration: underline;
         color: scolor.adjust($color-primary,$alpha:-0.7,$red:100);
       }
+    }
+  }
+}
+.food{
+  color: $color-primary;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  img{
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .btn-food{
+    padding: 0.35rem 1.25rem;
+    background-color:$color-btn;
+    color:white;
+    border: none;
+    border-bottom: 3px solid scolor.adjust($color-btn,$alpha:0.1,$red:50);
+    border-radius: 0.5rem;
+    text-align: center;
+    &:hover{
+      background-color: scolor.adjust($color-btn,$alpha:-0.15,$red:100)
     }
   }
 }
